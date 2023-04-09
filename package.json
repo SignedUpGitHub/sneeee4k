@@ -1,0 +1,19 @@
+{
+  "name": "sneeee4k",
+  "version": "1.0.0",
+  "description": "snek",
+  "main": "sneeeek.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SignedUpGitHub/sneeee4k.git"
+  },
+  "author": "SignedUp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SignedUpGitHub/sneeee4k/issues"
+  },
+  "homepage": "https://github.com/SignedUpGitHub/sneeee4k#readme"
+}

@@ -25,9 +25,9 @@ function matrix(row, col, defaultindex, charmap) {
         this.tablemap = []      
     }
 
-    //RENDER: Returns the whole converted map. If the override is set to false, overtbl is added to the original table map, if it is true, it will only print the overrided map. Overrides are good for curosrs, players, moving things, etc.
+    //RENDER: Returns the whole converted map. If the override is set to false, overtbl is added to the original table map, if it is true, it will only print the overrided map. Overrides are good for cursors, players, moving things, etc.
     this.render = function(override, ovrtbl = []) {
-        let output = table.slice()
+        let output = JSON.parse(JSON.stringify(table));
         if (override) {
             output = mapArray(ovrtbl, output)
         } else {
@@ -35,7 +35,7 @@ function matrix(row, col, defaultindex, charmap) {
         }
         
         //replace index with characters from the character map
-        output = table.map(row => {
+        output = output.map(row => {
             return row.map(index => {
               return this.charmap[index] || index;
             })

@@ -1,3 +1,5 @@
+//mrender: sprite-based terminal rendering engine
+
 function matrix(row, col, defaultindex, charmap) {
     //initiate index table
     this.rows = row
